@@ -1,0 +1,12 @@
+class Solution:
+    def fib(self, n: int) -> int:
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        return self.fib(n - 1) + self.fib(n - 2)
+
+
+s = Solution()
+print(s.fib(n=2))  # Output: 1
+print(s.fib(n=4))  # Output: 3
